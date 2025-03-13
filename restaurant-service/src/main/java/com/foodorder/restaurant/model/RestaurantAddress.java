@@ -11,6 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @ToString
+@Builder
 @Document
 public class RestaurantAddress {
 

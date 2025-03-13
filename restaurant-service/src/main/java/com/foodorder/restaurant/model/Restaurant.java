@@ -17,6 +17,7 @@ import java.util.List;
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @ToString
+@Builder
 @Document
 public class Restaurant {
 
@@ -25,8 +26,8 @@ public class Restaurant {
     String name;
     String contactNumber;
     String description;
-    String image;
-    String cuisineType;
+    String email;
+    List<String> cuisineType;
     List<RestaurantAddress> restaurantAddressList;
     Double ratings;
     LocalTime openingTime;
