@@ -24,5 +24,7 @@ public class RestaurantAddress {
     String state;
     String pinCode;
     Boolean isOpen;
+    Double latitude;
+    Double longitude;
 
 }
