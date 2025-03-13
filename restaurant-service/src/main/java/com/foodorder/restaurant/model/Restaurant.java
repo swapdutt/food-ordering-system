@@ -2,9 +2,13 @@ package com.foodorder.restaurant.model;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 @NoArgsConstructor
@@ -25,5 +29,11 @@ public class Restaurant {
     String cuisineType;
     List<RestaurantAddress> restaurantAddressList;
     Double ratings;
+    LocalTime openingTime;
+    LocalTime closingTime;
+    @CreationTimestamp
+    LocalDate createdOn;
+    @UpdateTimestamp
+    LocalDate updatedOn;
 
 }
