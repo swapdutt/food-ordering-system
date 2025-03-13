@@ -19,6 +19,7 @@
     <description>Spring boot microservices for food ordering system</description>
     <modules>
         <module>service-registration</module>
+        <module>restaurant-service</module>
     </modules>
 
     <properties>
